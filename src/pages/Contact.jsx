@@ -1,14 +1,48 @@
 import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleChange = () => {};
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
   const handleFocus = () => {};
+
   const handleBlur = () => {};
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Sanidhya Verma",
+          from_email: form.email,
+          to_email: import.meta.env.VITE_APP_EMAILJS_TO_EMAIL,
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        // TODO: Show success message
+        // TODO: Hide an alert
+      })
+      .catch((error) => {
+        console.log("Contact_email: ", error);
+        // TODO: Show error message
+      })
+      .finally(() => {
+        setForm({ name: "", email: "", message: "" });
+        setIsLoading(false);
+      });
+  };
 
   return (
     <section className="relative flex lg:flex-row flex-col max-container">
