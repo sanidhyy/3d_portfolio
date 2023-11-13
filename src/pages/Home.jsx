@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 
 import Loader from "../components/Loader";
 import Island from "../models/island";
+import Sky from "../models/Sky";
 
 const Home = () => {
   const adjustIslandForScreenSize = () => {
@@ -41,6 +42,7 @@ const Home = () => {
             intensity={1}
           />
 
+          <Sky />
           <Island
             position={islandPosition}
             scale={islandScale}
