@@ -1,7 +1,40 @@
 {
   "name": "3d_portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
+  "author": {
+    "name": "Sanidhya Kumar Verma",
+    "email": "sanidhya.verma12345@gmail.com",
+    "url": "https://github.com/sanidhyy"
+  },
+  "description": "Amazing 3D Portfolio in React using Three.js",
+  "keywords": [
+    "html",
+    "css",
+    "react",
+    "reactjs",
+    "3d",
+    "threejs",
+    "portfolio",
+    "3d portfolio",
+    "3d animations",
+    "modern",
+    "modern ui",
+    "modern ux",
+    "tailwindcss",
+    "javascript",
+    "js"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanidhyy/3d_portfolio.git"
+  },
+  "homepage": "https://github.com/sanidhyy/3d_portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/sanidhyy/3d_portfolio/issues",
+    "email": "sanidhya.verma12345@gmail.com"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -34,5 +67,15 @@
     "vite": "^4.4.5",
     "vite-plugin-pwa": "^0.16.7",
     "workbox-window": "^7.0.0"
-  }
+  },
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/sanidhy"
+    },
+    {
+      "type": "Buy me a coffee",
+      "url": "https://www.buymeacoffee.com/sanidhy"
+    }
+  ]
 }
