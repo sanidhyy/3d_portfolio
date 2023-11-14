@@ -55,7 +55,10 @@ const About = () => {
                 {/* bg btn */}
                 <div className="btn-back rounded-xl" />
                 {/* skill icon */}
-                <div className="btn-front rounded-xl flex justify-center items-center">
+                <div
+                  className="btn-front rounded-xl flex justify-center items-center"
+                  title={skill.name}
+                >
                   <img
                     src={skill.imageUrl}
                     alt={skill.name}

@@ -128,6 +128,7 @@ const Contact = () => {
                 name="name"
                 className="input disabled:cursor-not-allowed"
                 placeholder="John Doe"
+                title="Name"
                 value={form.name}
                 onChange={handleChange}
                 onFocus={handleFocus}
@@ -147,6 +148,7 @@ const Contact = () => {
                 className="input disabled:cursor-not-allowed"
                 placeholder="johndoe@email.com"
                 value={form.email}
+                title="Email"
                 onChange={handleChange}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
@@ -165,6 +167,7 @@ const Contact = () => {
                 rows={4}
                 placeholder="Let me know how I can help you!"
                 value={form.message}
+                title="Message"
                 onChange={handleChange}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
@@ -177,6 +180,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={isLoading}
+              title={isLoading ? "Sending..." : "Send Message"}
               className="btn"
               onFocus={handleFocus}
               onBlur={handleBlur}

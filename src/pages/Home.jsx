@@ -149,14 +149,17 @@ const Home = () => {
         </Canvas>
 
         {/* Sound On/Off toggle button */}
-        <div className="absolute bottom-2 left-2">
+        <aside
+          className="absolute bottom-2 left-2"
+          title={isPlayingMusic ? "Sound On" : "Sound Off"}
+        >
           <img
             src={isPlayingMusic ? soundon : soundoff}
             alt={isPlayingMusic ? "Sound On" : "Sound Off"}
             className="w-10 h-10 cursor-pointer object-contain"
             onClick={() => setIsPlayingMusic(!isPlayingMusic)}
           />
-        </div>
+        </aside>
       </section>
     </>
   );

@@ -11,6 +11,7 @@ const Navbar = () => {
       <NavLink
         to="/"
         className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
+        title={SITE_NAME}
       >
         <p className="blue-gradient_text">
           {SITE_NAME.split(" ")[0][0] + "" + SITE_NAME.split(" ")[1][0]}
@@ -26,6 +27,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? "text-blue-500" : "text-black"
             }
+            title={link.label}
             key={`Link_${link.label}`}
           >
             {link.label}
@@ -37,6 +39,7 @@ const Navbar = () => {
           to={EXTRA_LINKS.source_code}
           target="_blank"
           rel="noreferrer noopener"
+          title="Source Code"
         >
           <img src={github} alt="Github" className="w-5 h-5 object-contain" />
         </NavLink>

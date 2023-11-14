@@ -54,7 +54,10 @@ const Projects = () => {
                 <div className={`btn-back rounded-xl ${project.theme}`} />
 
                 {/* project icon */}
-                <div className="btn-front rounded-xl flex justify-center items-center">
+                <div
+                  className="btn-front rounded-xl flex justify-center items-center"
+                  title={project.name}
+                >
                   <img
                     src={project.iconUrl}
                     alt={project.name}
@@ -81,6 +84,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-semibold text-blue-600"
+                    title="Live Site Link"
                   >
                     Live Link
                   </Link>

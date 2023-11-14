@@ -10,7 +10,7 @@ const InfoBox = ({ text, link, btnText }) => (
     <p className="font-medium sm:text-xl text-center">{text}</p>
 
     {/* info right arrow */}
-    <Link to={link} className="neo-brutalism-white neo-btn">
+    <Link to={link} className="neo-brutalism-white neo-btn" title={btnText}>
       {btnText}
       <img src={arrow} alt="Arrow" className="w-4 h-4 object-contain" />
     </Link>

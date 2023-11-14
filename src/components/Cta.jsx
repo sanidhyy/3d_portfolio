@@ -11,7 +11,7 @@ const Cta = () => {
       </p>
 
       {/* contact btn */}
-      <Link to="/contact" className="btn">
+      <Link to="/contact" className="btn" title="Contact Me">
         Contact
       </Link>
     </section>
