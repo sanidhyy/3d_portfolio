@@ -1,7 +1,6 @@
 import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
   car,
-  contact,
   css,
   estate,
   express,
@@ -9,7 +8,6 @@ import {
   github,
   html,
   javascript,
-  linkedin,
   mongodb,
   motion,
   mui,
