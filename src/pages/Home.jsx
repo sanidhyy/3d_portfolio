@@ -4,10 +4,7 @@ import { Helmet } from "react-helmet";
 
 import { Loader, HomeInfo } from "../components";
 
-import Island from "../models/island";
-import Sky from "../models/Sky";
-import Bird from "../models/Bird";
-import Plane from "../models/Plane";
+import { Island, Sky, Bird, Plane } from "../models";
 
 import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";

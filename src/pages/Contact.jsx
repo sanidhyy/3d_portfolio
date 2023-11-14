@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 
 import { Loader, Alert } from "../components";
 
-import Fox from "../models/Fox";
+import { Fox } from "../models";
 import useAlert from "../hooks/useAlert";
 
 const Contact = () => {
