@@ -9,7 +9,6 @@
 [![Maintenance](https://flat.badgen.net/static/Maintained/yes?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d_portfolio/commits/main "Maintenance")
 [![GitHub branches](https://flat.badgen.net/github/branches/sanidhyy/3d_portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d_portfolio/branches "GitHub branches")
 [![Github commits](https://flat.badgen.net/github/commits/sanidhyy/3d_portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d_portfolio/commits "Github commits")
-[![Vercel status](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://threaad.vercel.app/ "Vercel status")
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7a5537f4-c52f-4f51-b503-9dd5a54853f9/deploy-status)](https://3-dportfolio.netlify.app/ "Netlify Status")
 [![GitHub issues](https://flat.badgen.net/github/issues/sanidhyy/3d_portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d_portfolio/issues "GitHub issues")
 [![GitHub pull requests](https://flat.badgen.net/github/prs/sanidhyy/3d_portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d_portfolio/pulls "GitHub pull requests")
