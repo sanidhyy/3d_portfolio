@@ -3,8 +3,7 @@ import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Helmet } from "react-helmet";
 
-import Loader from "../components/Loader";
-import Alert from "../components/Alert";
+import { Loader, Alert } from "../components";
 
 import Fox from "../models/Fox";
 import useAlert from "../hooks/useAlert";

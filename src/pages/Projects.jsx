@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-import Cta from "../components/Cta";
+import { Cta } from "../components";
 
 import { PROJECTS } from "../constants";
 import { arrow } from "../assets/icons";

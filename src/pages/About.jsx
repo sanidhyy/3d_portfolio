@@ -4,7 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 import { Helmet } from "react-helmet";
 
-import Cta from "../components/Cta";
+import { Cta } from "../components";
 
 import { SKILLS, EXPERIENCES } from "../constants";
 
