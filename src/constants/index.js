@@ -26,7 +26,22 @@ import {
   typescript,
 } from "../assets/icons";
 
-export const skills = [
+export const SIDEBAR_LINKS = [
+  {
+    route: "/about",
+    label: "About",
+  },
+  {
+    route: "/projects",
+    label: "Projects",
+  },
+  {
+    route: "/contact",
+    label: "Contact",
+  },
+];
+
+export const SKILLS = [
   {
     imageUrl: css,
     name: "CSS",
@@ -109,7 +124,7 @@ export const skills = [
   },
 ];
 
-export const experiences = [
+export const EXPERIENCES = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
@@ -164,25 +179,7 @@ export const experiences = [
   },
 ];
 
-export const socialLinks = [
-  {
-    name: "Contact",
-    iconUrl: contact,
-    link: "/contact",
-  },
-  {
-    name: "GitHub",
-    iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
-  },
-  {
-    name: "LinkedIn",
-    iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
-  },
-];
-
-export const projects = [
+export const PROJECTS = [
   {
     iconUrl: youtube,
     theme: "btn-back-red",

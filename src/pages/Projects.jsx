@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import Cta from "../components/Cta";
 
-import { projects } from "../constants";
+import { PROJECTS } from "../constants";
 import { arrow } from "../assets/icons";
 
 const Projects = () => {
@@ -32,7 +32,7 @@ const Projects = () => {
         </div>
 
         <div className="flex flex-wrap my-20 gap-16">
-          {projects.map((project) => (
+          {PROJECTS.map((project) => (
             <div
               key={`Project_${project.name}`}
               className="lg:w-[400px] w-full"

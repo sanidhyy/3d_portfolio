@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 
+import { SIDEBAR_LINKS } from "../constants";
+
 const Navbar = () => {
   return (
     <header className="header">
@@ -11,22 +13,17 @@ const Navbar = () => {
       </NavLink>
 
       <nav className="flex text-lg gap-7 font-medium">
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
-          }
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
-          }
-        >
-          Projects
-        </NavLink>
+        {SIDEBAR_LINKS.map((link) => (
+          <NavLink
+            to={link.route}
+            className={({ isActive }) =>
+              isActive ? "text-blue-500" : "text-black"
+            }
+            key={`Link_${link.label}`}
+          >
+            {link.label}
+          </NavLink>
+        ))}
       </nav>
     </header>
   );

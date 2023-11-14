@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 
 import Cta from "../components/Cta";
 
-import { skills, experiences } from "../constants";
+import { SKILLS, EXPERIENCES } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -35,7 +35,7 @@ const About = () => {
           <h3 className="subhead-text">My Skills</h3>
 
           <div className="mt-16 flex flex-wrap gap-12">
-            {skills.map((skill) => (
+            {SKILLS.map((skill) => (
               <div
                 className="block-container w-20 h-20"
                 key={`skill_${skill.name}`}
@@ -65,7 +65,7 @@ const About = () => {
 
           <div className="mt-12 flex">
             <VerticalTimeline>
-              {experiences.map((experience) => (
+              {EXPERIENCES.map((experience) => (
                 <VerticalTimelineElement
                   key={`Experience_${experience.title}`}
                   date={experience.date}
