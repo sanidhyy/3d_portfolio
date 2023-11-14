@@ -3,14 +3,14 @@ import { Helmet } from "react-helmet";
 
 import { Cta } from "../components";
 
-import { PROJECTS } from "../constants";
+import { PROJECTS, SITE_NAME } from "../constants";
 import { arrow } from "../assets/icons";
 
 const Projects = () => {
   return (
     <>
       <Helmet>
-        <title>Sanidhya Verma | Projects</title>
+        <title>{SITE_NAME} | Projects</title>
       </Helmet>
 
       <section className="max-container">

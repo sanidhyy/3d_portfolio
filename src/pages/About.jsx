@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 
 import { Cta } from "../components";
 
-import { SKILLS, EXPERIENCES } from "../constants";
+import { SKILLS, EXPERIENCES, SITE_NAME } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -14,13 +14,13 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Sanidhya Verma | About me</title>
+        <title>{SITE_NAME} | About me</title>
       </Helmet>
       <section className="max-container">
         <h1 className="head-text">
           Hello, I&apos;m{" "}
           <span className="blue-gradient_text font-semibold drop-shadow">
-            Sanidhya
+            {SITE_NAME.split(" ")[0]}
           </span>
         </h1>
 

@@ -7,6 +7,7 @@ import { Loader, Alert } from "../components";
 
 import { Fox } from "../models";
 import useAlert from "../hooks/useAlert";
+import { SITE_NAME } from "../constants";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -71,7 +72,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Sanidhya Verma | Contact Me</title>
+        <title>{SITE_NAME} | Contact Me</title>
       </Helmet>
       <section className="relative flex lg:flex-row flex-col max-container lg:h-screen">
         {alert.show && <Alert {...alert} />}

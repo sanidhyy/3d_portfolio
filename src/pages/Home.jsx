@@ -8,6 +8,7 @@ import { Island, Sky, Bird, Plane } from "../models";
 
 import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
+import { SITE_NAME } from "../constants";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -66,7 +67,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Sanidhya Verma | Portfolio</title>
+        <title>{SITE_NAME} | Portfolio</title>
       </Helmet>
       <section className="w-full h-screen relative">
         <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">

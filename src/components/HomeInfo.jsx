@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { arrow } from "../assets/icons";
+import { SITE_NAME } from "../constants";
 
 const InfoBox = ({ text, link, btnText }) => (
   <div className="info-box">
@@ -15,7 +16,8 @@ const InfoBox = ({ text, link, btnText }) => (
 const renderContent = {
   1: (
     <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
-      Hi, I am <span className="font-semibold">Sanidhya</span>👋
+      Hi, I am <span className="font-semibold">{SITE_NAME.split(" ")[0]}</span>
+      👋
       <br />A Software Engineer from India.
     </h1>
   ),
