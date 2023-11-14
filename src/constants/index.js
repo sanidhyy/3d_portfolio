@@ -15,14 +15,14 @@ import {
   mui,
   nextjs,
   nodejs,
-  pricewise,
   react,
   redux,
   sass,
-  snapgram,
   summiz,
   tailwindcss,
   threads,
+  youtube,
+  snappy,
   typescript,
 } from "../assets/icons";
 
@@ -184,12 +184,12 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: pricewise,
+    iconUrl: youtube,
     theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    name: "Modern UI/UX YouTube Clone",
     description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+      "Explore my React.js-based YouTube clone, powered by Rapid API. Seamlessly navigate, search, and enjoy dynamic video content with a sleek and intuitive design.",
+    link: "http://yt-youtube.netlify.app/",
   },
   {
     iconUrl: threads,
@@ -197,7 +197,7 @@ export const projects = [
     name: "Full Stack Threads Clone",
     description:
       'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
+    link: "https://threaad.vercel.app/",
   },
   {
     iconUrl: car,
@@ -205,15 +205,15 @@ export const projects = [
     name: "Car Finding App",
     description:
       "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
+    link: "https://carhb.vercel.app/",
   },
   {
-    iconUrl: snapgram,
+    iconUrl: snappy,
     theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
+    name: "Online Chat Application",
     description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
+      "Experience my chat app, built on React.js, Socket.io, and MongoDB. Enjoy seamless communication with a sleek design for an intuitive and engaging messaging experience.",
+    link: "https://snappy-chatapp.netlify.app/",
   },
   {
     iconUrl: estate,
@@ -221,7 +221,7 @@ export const projects = [
     name: "Real-Estate Application",
     description:
       "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
+    link: "https://real-estate-app-react.vercel.app/",
   },
   {
     iconUrl: summiz,
@@ -229,6 +229,6 @@ export const projects = [
     name: "AI Summarizer Application",
     description:
       "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+    link: "https://summise.netlify.app/",
   },
 ];
