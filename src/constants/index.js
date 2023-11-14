@@ -122,6 +122,12 @@ export const SKILLS = [
   },
 ];
 
+export const SITE_NAME = "Sanidhya Verma";
+
+export const EXTRA_LINKS = {
+  source_code: "https://github.com/sanidhyy/3d_portfolio",
+};
+
 export const EXPERIENCES = [
   {
     title: "React.js Developer",
