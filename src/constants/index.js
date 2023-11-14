@@ -1,3 +1,6 @@
+// contains all constants to be used throughout the project
+// dont' remove anything from here if not sure
+
 import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
   car,
@@ -24,6 +27,7 @@ import {
   typescript,
 } from "../assets/icons";
 
+// sidebar links
 export const SIDEBAR_LINKS = [
   {
     route: "/about",
@@ -39,6 +43,7 @@ export const SIDEBAR_LINKS = [
   },
 ];
 
+// skills
 export const SKILLS = [
   {
     imageUrl: css,
@@ -122,12 +127,15 @@ export const SKILLS = [
   },
 ];
 
+// site name
 export const SITE_NAME = "Sanidhya Verma";
 
+// extra links
 export const EXTRA_LINKS = {
   source_code: "https://github.com/sanidhyy/3d_portfolio",
 };
 
+// experiences
 export const EXPERIENCES = [
   {
     title: "React.js Developer",
@@ -183,6 +191,7 @@ export const EXPERIENCES = [
   },
 ];
 
+// projects
 export const PROJECTS = [
   {
     iconUrl: youtube,

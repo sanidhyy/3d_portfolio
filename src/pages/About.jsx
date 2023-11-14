@@ -4,19 +4,26 @@ import {
 } from "react-vertical-timeline-component";
 import { Helmet } from "react-helmet";
 
+// components
 import { Cta } from "../components";
 
+// constants
 import { SKILLS, EXPERIENCES, SITE_NAME } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 
+// about
 const About = () => {
   return (
     <>
+      {/* update site title */}
       <Helmet>
         <title>{SITE_NAME} | About me</title>
       </Helmet>
+
+      {/* about section */}
       <section className="max-container">
+        {/* about head */}
         <h1 className="head-text">
           Hello, I&apos;m{" "}
           <span className="blue-gradient_text font-semibold drop-shadow">
@@ -24,6 +31,7 @@ const About = () => {
           </span>
         </h1>
 
+        {/* about text */}
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
             Software Engineer based in India, specializing in technical
@@ -31,16 +39,22 @@ const About = () => {
           </p>
         </div>
 
+        {/* about skills */}
         <div className="py-10 flex flex-col">
+          {/* skills head */}
           <h3 className="subhead-text">My Skills</h3>
 
+          {/* skills list */}
           <div className="mt-16 flex flex-wrap gap-12">
+            {/* map over each skill */}
             {SKILLS.map((skill) => (
               <div
                 className="block-container w-20 h-20"
                 key={`skill_${skill.name}`}
               >
+                {/* bg btn */}
                 <div className="btn-back rounded-xl" />
+                {/* skill icon */}
                 <div className="btn-front rounded-xl flex justify-center items-center">
                   <img
                     src={skill.imageUrl}
@@ -53,9 +67,12 @@ const About = () => {
           </div>
         </div>
 
+        {/* work experience */}
         <div className="py-16">
+          {/* experience head */}
           <h3 className="subhead-text">Work Experience</h3>
 
+          {/* experience text */}
           <div className="mt-5 flex flex-col gap-3 text-slate-500">
             <p>
               I&apos;ve worked with all sorts of companies, leveling up my
@@ -63,14 +80,17 @@ const About = () => {
             </p>
           </div>
 
+          {/* experience list */}
           <div className="mt-12 flex">
             <VerticalTimeline>
+              {/* map over each experience */}
               {EXPERIENCES.map((experience) => (
                 <VerticalTimelineElement
                   key={`Experience_${experience.title}`}
                   date={experience.date}
                   icon={
                     <div className="flex justify-center items-center w-full h-full">
+                      {/* experience icon */}
                       <img
                         src={experience.icon}
                         alt={experience.company_name}
@@ -88,11 +108,14 @@ const About = () => {
                     boxShadow: "none",
                   }}
                 >
-                  <div className="">
+                  {/* experience info */}
+                  <div>
+                    {/* experience title */}
                     <h3 className="text-black text-xl font-poppins font-semibold">
                       {experience.title}
                     </h3>
 
+                    {/* experience company name */}
                     <p
                       className="text-black-500 font-medium font-base"
                       style={{ margin: 0 }}
@@ -101,7 +124,9 @@ const About = () => {
                     </p>
                   </div>
 
+                  {/* experience points */}
                   <ul className="my-5 list-disc ml-5 space-y-2">
+                    {/* map over each experience point */}
                     {experience.points.map((point, i) => (
                       <li
                         key={`Experience_${experience.title}_point_${i + 1}`}
@@ -117,7 +142,10 @@ const About = () => {
           </div>
         </div>
 
+        {/* horizontal separator */}
         <hr className="border-slate-200" />
+
+        {/* call-to-action */}
         <Cta />
       </section>
     </>

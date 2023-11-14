@@ -1,3 +1,4 @@
+// alert
 const Alert = ({ type, text }) => {
   return (
     <div className="absolute top-10 left-0 right-0 flex justify-center items-center">
@@ -7,6 +8,7 @@ const Alert = ({ type, text }) => {
         } p-2 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex items-center`}
         role="alert"
       >
+        {/* alert head */}
         <p
           className={`${
             type === "danger" ? "bg-red-500" : "bg-blue-500"
@@ -14,6 +16,8 @@ const Alert = ({ type, text }) => {
         >
           {type === "danger" ? "Failed" : "Success"}
         </p>
+
+        {/* alert text */}
         <p className="mr-2 text-left">{text}</p>
       </div>
     </div>

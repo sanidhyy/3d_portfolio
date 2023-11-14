@@ -1,3 +1,6 @@
+// contains all icons imports
+// dont' remove anything from here if not sure
+
 import css from "./css.svg";
 import express from "./express.svg";
 import git from "./git.svg";
@@ -25,6 +28,7 @@ import arrow from "./arrow.svg";
 import soundon from "./soundon.png";
 import soundoff from "./soundoff.png";
 
+// export icons
 export {
   css,
   express,

@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* tailwind css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* predefine colors */
 :root {
   --blue-rgb: 237 245 255;
   --green-rgb: 125 161 35;
 }
 
+/* body */
 body {
   font-family: "Work Sans", sans-serif;
 }
@@ -21,6 +24,7 @@ body:has(.card[data-color="green"]:hover) {
   background-color: rgb(var(--green-rgb) / 25%);
 }
 
+/* utilities */
 @layer utilities {
   .max-container {
     @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
@@ -79,6 +83,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 }
 
+/* glass effect styles */
 .glassmorphism {
   background: rgba(8, 116, 239, 0.07);
   backdrop-filter: blur(10px);
@@ -87,6 +92,7 @@ body:has(.card[data-color="green"]:hover) {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+/* logo styles */
 .logo {
   border-radius: 8.889px;
   background: #fff;
@@ -94,12 +100,14 @@ body:has(.card[data-color="green"]:hover) {
     0px 1.5px 4px -1px rgba(67, 83, 255, 0.2);
 }
 
+/* section container */
 .block-container {
   position: relative;
   transition: 250ms;
   perspective: 500px;
 }
 
+/* skills btn back */
 .block-container .btn-back {
   position: absolute;
   inset: 0;
@@ -114,6 +122,7 @@ body:has(.card[data-color="green"]:hover) {
   box-shadow: 16px 0 40px #e4e4e4;
 }
 
+/* other btn styles */
 .block-container .btn-back-red {
   background: linear-gradient(135deg, #ff4b1f -20%, #ff9068 120%);
 }
@@ -142,6 +151,7 @@ body:has(.card[data-color="green"]:hover) {
   background: linear-gradient(135deg, #0a1647 -20%, #e4e7e4 120%);
 }
 
+/* skills front btn */
 .block-container .btn-front {
   position: absolute;
   inset: 0;
@@ -157,6 +167,7 @@ body:has(.card[data-color="green"]:hover) {
   overflow: hidden;
 }
 
+/* btn hover effects */
 .block-container:hover > .btn-back {
   transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
 }
@@ -175,6 +186,7 @@ body:has(.card[data-color="green"]:hover) {
     0.65vmin 1vmin #0092db, 1vmin 0.65vmin #0092db;
 }
 
+/* Neo Brutalism White */
 .neo-brutalism-white {
   background: #fff;
   border: #fff;
