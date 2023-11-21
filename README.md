@@ -39,7 +39,7 @@
 
 ## :bangbang: Folder Structure
 
-Here is the folder structure of Threads Clone.
+Here is the folder structure of 3D Portfolio.
 
 ```bash
 3d_portfolio/
