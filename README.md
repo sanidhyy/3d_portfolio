@@ -41,6 +41,8 @@
 
 Here is the folder structure of 3D Portfolio.
 
+<!--- FOLDER_STRUCTURE_START --->
+
 ```bash
 3d_portfolio/
   |- public/
@@ -74,6 +76,8 @@ Here is the folder structure of 3D Portfolio.
   |- tailwind.config.js
   |- .eslintrc.cjs
 ```
+
+<!--- FOLDER_STRUCTURE_END --->
 
 <br />
 
@@ -144,12 +148,15 @@ You might encounter some bugs while using this app. You are more than welcome to
 
 Useful resources and libraries that are used in My Portfolio
 
+<!--- DEPENDENCIES_START --->
+
 - [React Three Drei](https://github.com/pmndrs/drei "React Three Drei")
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber "React Three Fiber")
 - [React Vertical Timeline Component](https://stephane-monnot.github.io/react-vertical-timeline/ "React Vertical Timeline Component")
 - [React Router DOM](https://reactrouter.com/ "React Router DOM")
 - [Prettier](https://prettier.io "Prettier")
 - [ESLint](https://eslint.org "ESLint")
+<!--- DEPENDENCIES_END --->
 
 ## :coffee: Buy Me a Coffee
 
