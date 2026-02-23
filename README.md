@@ -42,41 +42,54 @@
 Here is the folder structure of 3D Portfolio.
 
 <!--- FOLDER_STRUCTURE_START --->
-
 ```bash
 3d_portfolio/
+  |- dev-dist/
+    |-- registerSW.js
+    |-- sw.js
+    |-- workbox-16108a29.js
   |- public/
-    |-- favicon.ico
   |- src/
     |-- assets/
-        |--- onboarding/
-        |--- 3d/
-        |--- icons/
-        |--- images/
-        |--- sakura.mp3
     |-- components/
-        |--- index.js
+      |--- Alert.jsx
+      |--- Cta.jsx
+      |--- HomeInfo.jsx
+      |--- index.js
+      |--- Loader.jsx
+      |--- Navbar.jsx
     |-- constants/
-        |--- index.js
+      |--- index.js
     |-- hooks/
-        |--- useAlert.js
+      |--- useAlert.js
     |-- models/
-        |--- index.js
+      |--- Bird.jsx
+      |--- Fox.jsx
+      |--- index.js
+      |--- island.jsx
+      |--- Plane.jsx
+      |--- Sky.jsx
     |-- pages/
-        |--- index.js
+      |--- About.jsx
+      |--- Contact.jsx
+      |--- Home.jsx
+      |--- index.js
+      |--- Projects.jsx
     |-- App.jsx
     |-- index.css
     |-- main.jsx
-  |- .env.local
   |- .env.example
-  |- vite.config.js
+  |- .env/.env.local
+  |- .eslintrc.cjs
+  |- .gitignore
+  |- index.html
+  |- netlify.toml
   |- package-lock.json
   |- package.json
   |- postcss.config.js
   |- tailwind.config.js
-  |- .eslintrc.cjs
+  |- vite.config.js
 ```
-
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -149,13 +162,29 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
+- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^3.11.0
+- [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): ^9.7.3
+- [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^9.88.13
+- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^8.15.10
+- [@types/react](https://www.npmjs.com/package/@types/react): ^18.2.15
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18.2.7
+- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^4.0.3
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.16
+- [eslint](https://www.npmjs.com/package/eslint): ^8.45.0
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react): ^7.32.2
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): ^4.6.0
+- [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh): ^0.4.3
+- [postcss](https://www.npmjs.com/package/postcss): ^8.4.31
+- [react](https://www.npmjs.com/package/react): ^18.2.0
+- [react-dom](https://www.npmjs.com/package/react-dom): ^18.2.0
+- [react-helmet](https://www.npmjs.com/package/react-helmet): ^6.1.0
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^6.30.3
+- [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^3.6.0
+- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.5
+- [vite](https://www.npmjs.com/package/vite): ^4.5.2
+- [vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa): ^0.16.7
+- [workbox-window](https://www.npmjs.com/package/workbox-window): ^7.0.0
 
-- [React Three Drei](https://github.com/pmndrs/drei "React Three Drei")
-- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber "React Three Fiber")
-- [React Vertical Timeline Component](https://stephane-monnot.github.io/react-vertical-timeline/ "React Vertical Timeline Component")
-- [React Router DOM](https://reactrouter.com/ "React Router DOM")
-- [Prettier](https://prettier.io "Prettier")
-- [ESLint](https://eslint.org "ESLint")
 <!--- DEPENDENCIES_END --->
 
 ## :coffee: Buy Me a Coffee
