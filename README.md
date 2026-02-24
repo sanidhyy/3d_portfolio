@@ -151,7 +151,7 @@ VITE_APP_EMAILJS_TO_EMAIL=<your-email-here>
 
 ## :wrench: Stats
 
-[![Stats for this App](/.github/images/stats.svg "Stats for this App")](https://pagespeed-insights-svg.glitch.me/?url=https://3-dportfolio.netlify.app/ "Stats for this App")
+[![Stats for this App](/.github/images/stats.svg "Stats for this App")](https://pagespeed.web.dev/analysis?url=https://3-dportfolio.netlify.app/ "Stats for this App")
 
 ## :raised_hands: Contribute
 
