@@ -86,6 +86,8 @@ Here is the folder structure of 3D Portfolio.
   |- netlify.toml
   |- package-lock.json
   |- package.json
+  |- pnpm-lock.yaml
+  |- pnpm-workspace.yaml
   |- postcss.config.js
   |- tailwind.config.js
   |- vite.config.js
@@ -168,7 +170,7 @@ Useful resources and libraries that are used in My Portfolio
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^8.15.10
 - [@types/react](https://www.npmjs.com/package/@types/react): ^18.2.15
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18.2.7
-- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^4.0.3
+- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.0.2
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.16
 - [eslint](https://www.npmjs.com/package/eslint): ^8.45.0
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react): ^7.32.2
@@ -181,7 +183,7 @@ Useful resources and libraries that are used in My Portfolio
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^6.30.3
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^3.6.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.5
-- [vite](https://www.npmjs.com/package/vite): ^4.5.2
+- [vite](https://www.npmjs.com/package/vite): ^8.0.16
 - [vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa): ^0.16.7
 - [workbox-window](https://www.npmjs.com/package/workbox-window): ^7.0.0
 
