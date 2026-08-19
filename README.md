@@ -179,7 +179,7 @@ Useful resources and libraries that are used in My Portfolio
 - [react](https://www.npmjs.com/package/react): ^18.2.0
 - [react-dom](https://www.npmjs.com/package/react-dom): ^18.2.0
 - [react-helmet](https://www.npmjs.com/package/react-helmet): ^6.1.0
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^6.30.3
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.18.2
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.5
 - [vite](https://www.npmjs.com/package/vite): ^8.2.1
