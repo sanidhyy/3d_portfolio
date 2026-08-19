@@ -163,7 +163,7 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
-- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^3.11.0
+- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): ^9.7.3
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^9.88.13
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^8.15.10
