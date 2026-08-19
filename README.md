@@ -169,11 +169,11 @@ Useful resources and libraries that are used in My Portfolio
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^8.15.10
 - [@types/react](https://www.npmjs.com/package/@types/react): ^18.2.15
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18.2.7
-- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.0.2
+- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.0.5
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.16
 - [eslint](https://www.npmjs.com/package/eslint): ^8.45.0
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react): ^7.32.2
-- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): ^4.6.0
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): ^7.1.1
 - [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh): ^0.4.3
 - [postcss](https://www.npmjs.com/package/postcss): ^8.5.25
 - [react](https://www.npmjs.com/package/react): ^18.2.0
