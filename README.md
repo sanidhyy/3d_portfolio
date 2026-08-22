@@ -170,7 +170,7 @@ Useful resources and libraries that are used in My Portfolio
 - [@types/react](https://www.npmjs.com/package/@types/react): ^18.2.15
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18.2.7
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.0.5
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.16
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.5.4
 - [eslint](https://www.npmjs.com/package/eslint): ^8.45.0
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react): ^7.32.2
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): ^7.1.1
