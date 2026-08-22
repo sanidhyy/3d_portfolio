@@ -183,7 +183,7 @@ Useful resources and libraries that are used in My Portfolio
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.5
 - [vite](https://www.npmjs.com/package/vite): ^8.2.1
-- [vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa): ^0.16.7
+- [vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa): ^1.3.0
 - [workbox-window](https://www.npmjs.com/package/workbox-window): ^7.0.0
 
 <!--- DEPENDENCIES_END --->
