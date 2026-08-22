@@ -164,7 +164,7 @@ Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
-- [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): ^9.7.3
+- [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): ^10.1.2
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^9.88.13
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^8.15.10
 - [@types/react](https://www.npmjs.com/package/@types/react): ^18.2.15
