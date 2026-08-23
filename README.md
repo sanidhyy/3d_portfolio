@@ -136,6 +136,14 @@ VITE_APP_EMAILJS_TO_EMAIL=<your-email-here>
 
 **NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
 
+### :raising_hand: Need Help?
+
+If you run into issues during installation or setup:
+
+- **GitHub Discussions** — [Open a Q&A discussion](https://github.com/sanidhyy/3d_portfolio/discussions/new?category=q-a) for setup and troubleshooting help.
+- **Email** — [sanidhyyy@gmail.com](mailto:sanidhyyy@gmail.com)
+- **Discord** — `sanidhyy`
+
 ## :camera: Screenshots:
 
 ![Modern Animations using Three JS](/.github/images/img1.png "Modern Animations using Three JS")
