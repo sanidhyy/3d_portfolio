@@ -1,7 +1,7 @@
 import { Suspense, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 // components
 import { Loader, Alert } from "../components";

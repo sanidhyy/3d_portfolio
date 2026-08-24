@@ -1,6 +1,7 @@
 // Import React hooks and components
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { useAnimations, useGLTF } from "@react-three/drei";
+import { clone } from "three/addons/utils/SkeletonUtils.js";
 
 // Import the 3D model file for the plane
 import planeScene from "../assets/3d/plane.glb";
@@ -12,22 +13,23 @@ const Plane = ({ isRotating, ...props }) => {
 
   // Load the 3D model and animations using useGLTF and useAnimations hooks
   const { scene, animations } = useGLTF(planeScene);
+  const clonedScene = useMemo(() => clone(scene), [scene]);
   const { actions } = useAnimations(animations, ref);
 
   // Use useEffect to play or stop the animation based on the isRotating prop
   useEffect(() => {
     // Play the animation if isRotating is true, otherwise stop it
     if (isRotating) {
-      actions["Take 001"].play();
+      actions["Take 001"]?.play();
     } else {
-      actions["Take 001"].stop();
+      actions["Take 001"]?.stop();
     }
   }, [actions, isRotating]);
 
   // Return the JSX for the Plane component with mesh and primitive
   return (
-    <mesh {...props} ref={ref}>
-      <primitive object={scene} />
+    <mesh {...props} ref={ref} dispose={null}>
+      <primitive object={clonedScene} />
     </mesh>
   );
 };

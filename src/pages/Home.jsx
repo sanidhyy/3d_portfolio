@@ -1,6 +1,6 @@
 import { Suspense, useState, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 // components
 import { Loader, HomeInfo } from "../components";
@@ -117,7 +117,7 @@ const Home = () => {
 
             {/* Hemisphere light for sky and ground color */}
             <hemisphereLight
-              skyColor="#b1e1ff"
+              color="#b1e1ff"
               groundColor="#000000"
               intensity={1}
             />

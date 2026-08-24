@@ -7,8 +7,10 @@
 */
 
 // Import React hooks and components
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
+import { useGraph } from "@react-three/fiber";
+import { clone } from "three/addons/utils/SkeletonUtils.js";
 
 // Import the 3D model file for the fox
 import foxScene from "../assets/3d/fox.glb";
@@ -19,7 +21,9 @@ const Fox = ({ currentAnimation, ...props }) => {
   const group = useRef();
 
   // Load the 3D model and animations using useGLTF and useAnimations hooks
-  const { nodes, materials, animations } = useGLTF(foxScene);
+  const { scene, animations } = useGLTF(foxScene);
+  const clonedScene = useMemo(() => clone(scene), [scene]);
+  const { nodes, materials } = useGraph(clonedScene);
   const { actions } = useAnimations(animations, group);
 
   // Use useEffect to play the specified animation when it changes

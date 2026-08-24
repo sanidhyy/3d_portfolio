@@ -95,6 +95,8 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
 
   // Use useFrame hook for animation logic
   useFrame(() => {
+    if (!islandRef.current) return;
+
     if (!isRotating) {
       // Damping effect when not rotating
       rotationSpeed.current *= dampingFactor;
@@ -161,7 +163,7 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
 
   // Return the JSX for the Island component with group and mesh elements
   return (
-    <a.group ref={islandRef} {...props}>
+    <a.group ref={islandRef} {...props} dispose={null}>
       <mesh
         geometry={nodes.polySurface944_tree_body_0.geometry}
         material={materials.PaletteMaterial001}

@@ -1,6 +1,7 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useMemo } from "react";
 import { useAnimations, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import { clone } from "three/addons/utils/SkeletonUtils.js";
 
 // Import the 3D model file for the bird
 import birdScene from "../assets/3d/bird.glb";
@@ -12,15 +13,18 @@ const Bird = () => {
 
   // Load the 3D model and animations using useGLTF and useAnimations hooks
   const { scene, animations } = useGLTF(birdScene);
+  const clonedScene = useMemo(() => clone(scene), [scene]);
   const { actions } = useAnimations(animations, birdRef);
 
   // Start playing the "Take 001" animation when the component mounts
   useEffect(() => {
-    actions["Take 001"].play();
+    actions["Take 001"]?.play();
   }, [actions]);
 
   // Use the useFrame hook for animation logic
   useFrame(({ clock, camera }) => {
+    if (!birdRef.current) return;
+
     // Update the Y position to simulate flight in a sin wave pattern
     birdRef.current.position.y = Math.sin(clock.elapsedTime) * 0.2 + 2;
 
@@ -43,8 +47,13 @@ const Bird = () => {
 
   // Return the JSX for the Bird component with position, scale, and reference
   return (
-    <mesh position={[-5, 2, 1]} scale={[0.003, 0.003, 0.003]} ref={birdRef}>
-      <primitive object={scene} />
+    <mesh
+      position={[-5, 2, 1]}
+      scale={[0.003, 0.003, 0.003]}
+      ref={birdRef}
+      dispose={null}
+    >
+      <primitive object={clonedScene} />
     </mesh>
   );
 };

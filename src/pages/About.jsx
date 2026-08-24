@@ -2,7 +2,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 // components
 import { Cta } from "../components";
