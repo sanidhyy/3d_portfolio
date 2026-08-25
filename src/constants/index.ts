@@ -27,8 +27,48 @@ import {
   typescript,
 } from "../assets/icons";
 
+export type SidebarLink = {
+  route: string;
+  label: string;
+};
+
+export type SkillType =
+  | "Frontend"
+  | "Backend"
+  | "Version Control"
+  | "Database"
+  | "Animation"
+  | "State Management";
+
+export type Skill = {
+  imageUrl: string;
+  name: string;
+  type: SkillType;
+};
+
+export type ExtraLinks = {
+  source_code: string;
+};
+
+export type Experience = {
+  title: string;
+  company_name: string;
+  icon: string;
+  iconBg: string;
+  date: string;
+  points: string[];
+};
+
+export type Project = {
+  iconUrl: string;
+  theme: string;
+  name: string;
+  description: string;
+  link: string;
+};
+
 // sidebar links
-export const SIDEBAR_LINKS = [
+export const SIDEBAR_LINKS: SidebarLink[] = [
   {
     route: "/about",
     label: "About",
@@ -44,7 +84,7 @@ export const SIDEBAR_LINKS = [
 ];
 
 // skills
-export const SKILLS = [
+export const SKILLS: Skill[] = [
   {
     imageUrl: css,
     name: "CSS",
@@ -131,12 +171,12 @@ export const SKILLS = [
 export const SITE_NAME = "Sanidhya Verma";
 
 // extra links
-export const EXTRA_LINKS = {
+export const EXTRA_LINKS: ExtraLinks = {
   source_code: "https://github.com/sanidhyy/3d_portfolio",
 };
 
 // experiences
-export const EXPERIENCES = [
+export const EXPERIENCES: Experience[] = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
@@ -192,7 +232,7 @@ export const EXPERIENCES = [
 ];
 
 // projects
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
   {
     iconUrl: youtube,
     theme: "btn-back-red",
