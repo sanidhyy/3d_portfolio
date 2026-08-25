@@ -1,4 +1,5 @@
 import { Suspense, useRef, useState } from "react";
+import type { ChangeEvent, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Helmet } from "react-helmet-async";
@@ -7,25 +8,40 @@ import { Helmet } from "react-helmet-async";
 import { Loader, Alert } from "../components";
 
 import { Fox } from "../models";
+import type { FoxAnimation } from "../models";
 import useAlert from "../hooks/useAlert";
 import { SITE_NAME } from "../constants";
+
+type ContactForm = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 // contact
 const Contact = () => {
   // refs
-  const formRef = useRef(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   // states
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState<ContactForm>({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [isLoading, setIsLoading] = useState(false);
-  const [currentAnimation, setCurrentAnimation] = useState("idle");
+  const [currentAnimation, setCurrentAnimation] =
+    useState<FoxAnimation>("idle");
 
   // hooks
   const { alert, showAlert, hideAlert } = useAlert();
 
   // handle form change
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const field = e.target.name as keyof ContactForm;
+    setForm({ ...form, [field]: e.target.value });
   };
 
   // handle form input focus
@@ -35,7 +51,7 @@ const Contact = () => {
   const handleBlur = () => setCurrentAnimation("idle");
 
   // handle form submit
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     // prevent page reload
     e.preventDefault();
 
@@ -70,7 +86,7 @@ const Contact = () => {
       })
 
       // show error message
-      .catch((error) => {
+      .catch((error: unknown) => {
         console.log("Contact_email: ", error);
         showAlert({
           show: true,

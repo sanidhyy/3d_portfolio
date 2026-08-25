@@ -52,42 +52,46 @@ Here is the folder structure of 3D Portfolio.
   |- src/
     |-- assets/
     |-- components/
-      |--- Alert.jsx
-      |--- Cta.jsx
-      |--- HomeInfo.jsx
-      |--- index.js
-      |--- Loader.jsx
-      |--- Navbar.jsx
+      |--- Alert.tsx
+      |--- Cta.tsx
+      |--- HomeInfo.tsx
+      |--- index.ts
+      |--- Loader.tsx
+      |--- Navbar.tsx
     |-- constants/
-      |--- index.js
+      |--- index.ts
     |-- hooks/
-      |--- useAlert.js
+      |--- useAlert.ts
     |-- models/
-      |--- Bird.jsx
-      |--- Fox.jsx
-      |--- index.js
-      |--- island.jsx
-      |--- Plane.jsx
-      |--- Sky.jsx
+      |--- Bird.tsx
+      |--- Fox.tsx
+      |--- index.ts
+      |--- Island.tsx
+      |--- Plane.tsx
+      |--- Sky.tsx
     |-- pages/
-      |--- About.jsx
-      |--- Contact.jsx
-      |--- Home.jsx
-      |--- index.js
-      |--- Projects.jsx
-    |-- App.jsx
+      |--- About.tsx
+      |--- Contact.tsx
+      |--- Home.tsx
+      |--- index.ts
+      |--- Projects.tsx
+    |-- App.tsx
     |-- index.css
-    |-- main.jsx
+    |-- main.tsx
+    |-- vite-env.d.ts
   |- .env.example
   |- .env/.env.local
-  |- .eslintrc.cjs
   |- .gitignore
+  |- eslint.config.js
   |- index.html
   |- netlify.toml
   |- package.json
   |- pnpm-lock.yaml
   |- pnpm-workspace.yaml
-  |- vite.config.js
+  |- tsconfig.app.json
+  |- tsconfig.json
+  |- tsconfig.node.json
+  |- vite.config.ts
 ```
 <!--- FOLDER_STRUCTURE_END --->
 
@@ -154,7 +158,7 @@ If you run into issues during installation or setup:
 
 ## :gear: Tech Stack
 
-[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Vite JS](https://skillicons.dev/icons?i=vite "Vite JS")](https://vitejs.dev/ "Vite JS") [![JavaScript](https://skillicons.dev/icons?i=js "JavaScript")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/ "JavaScript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.com/ "Netlify") [![Three JS](https://skillicons.dev/icons?i=threejs "Three JS")](https://threejs.org/ "Three JS")
+[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Vite JS](https://skillicons.dev/icons?i=vite "Vite JS")](https://vitejs.dev/ "Vite JS") [![TypeScript](https://skillicons.dev/icons?i=ts "TypeScript")](https://www.typescriptlang.org/ "TypeScript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.com/ "Netlify") [![Three JS](https://skillicons.dev/icons?i=threejs "Three JS")](https://threejs.org/ "Three JS")
 
 ## :wrench: Stats
 
@@ -170,17 +174,20 @@ Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
+- [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
 - [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): ^10.1.2
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.8
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.7.0
 - [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite): ^4.3.3
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.18
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.5
+- [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
+- [@types/three](https://www.npmjs.com/package/@types/three): ^0.185.4
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.1.0
 - [eslint](https://www.npmjs.com/package/eslint): ^10.9.0
-- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react): ^7.32.2
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): ^7.1.1
 - [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh): ^0.5.4
+- [globals](https://www.npmjs.com/package/globals): ^17.11.0
 - [react](https://www.npmjs.com/package/react): ^19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.8
 - [react-helmet-async](https://www.npmjs.com/package/react-helmet-async): ^3.0.0
@@ -188,6 +195,8 @@ Useful resources and libraries that are used in My Portfolio
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
 - [three](https://www.npmjs.com/package/three): ^0.185.1
+- [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
+- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint): ^8.67.0
 - [vite](https://www.npmjs.com/package/vite): ^8.2.2
 - [vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa): ^1.3.0
 - [workbox-window](https://www.npmjs.com/package/workbox-window): ^7.0.0

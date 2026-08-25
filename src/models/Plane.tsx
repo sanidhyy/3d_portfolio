@@ -1,15 +1,21 @@
 // Import React hooks and components
 import { useEffect, useMemo, useRef } from "react";
 import { useAnimations, useGLTF } from "@react-three/drei";
+import type { ThreeElements } from "@react-three/fiber";
 import { clone } from "three/addons/utils/SkeletonUtils.js";
+import type { Mesh } from "three";
 
 // Import the 3D model file for the plane
 import planeScene from "../assets/3d/plane.glb";
 
+type PlaneProps = ThreeElements["mesh"] & {
+  isRotating: boolean;
+};
+
 // Plane component definition
-const Plane = ({ isRotating, ...props }) => {
+const Plane = ({ isRotating, ...props }: PlaneProps) => {
   // Create a reference for the plane mesh
-  const ref = useRef();
+  const ref = useRef<Mesh>(null);
 
   // Load the 3D model and animations using useGLTF and useAnimations hooks
   const { scene, animations } = useGLTF(planeScene);

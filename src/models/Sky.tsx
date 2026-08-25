@@ -2,18 +2,23 @@
 import { useMemo, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import type { Mesh } from "three";
 
 // Import the 3D model file for the sky
 import skyScene from "../assets/3d/sky.glb";
 
+type SkyProps = {
+  isRotating: boolean;
+};
+
 // Sky component definition
-const Sky = ({ isRotating }) => {
+const Sky = ({ isRotating }: SkyProps) => {
   // Load the 3D model using useGLTF hook
   const { scene } = useGLTF(skyScene);
   const clonedScene = useMemo(() => scene.clone(true), [scene]);
 
   // Create a reference for the sky mesh
-  const skyRef = useRef();
+  const skyRef = useRef<Mesh>(null);
 
   // Use useFrame hook for animation logic
   useFrame((_, delta) => {
