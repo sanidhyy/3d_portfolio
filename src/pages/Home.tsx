@@ -7,6 +7,7 @@ import { Loader, HomeInfo } from "../components";
 
 // models
 import { Island, Sky, Bird, Plane } from "../models";
+import type { IslandStage } from "../models";
 
 // assets
 import sakura from "../assets/sakura.mp3";
@@ -15,22 +16,28 @@ import { soundoff, soundon } from "../assets/icons";
 // constants
 import { SITE_NAME } from "../constants";
 
+type Vec3 = [number, number, number];
+
 // home
 const Home = () => {
   // refs
-  const audioRef = useRef(new Audio(sakura));
-  // update audio ref
-  audioRef.current.volume = 0.4;
-  audioRef.current.loop = true;
+  const audioRef = useRef<HTMLAudioElement>(
+    (() => {
+      const audio = new Audio(sakura);
+      audio.volume = 0.4;
+      audio.loop = true;
+      return audio;
+    })()
+  );
 
   // states
   const [isRotating, setIsRotating] = useState(false);
-  const [currentStage, setCurrentStage] = useState(1);
+  const [currentStage, setCurrentStage] = useState<IslandStage | null>(1);
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
   // on music state change
   useEffect(() => {
-    let audioRefValue = null;
+    let audioRefValue: HTMLAudioElement | null = null;
 
     // if music is playing
     if (isPlayingMusic) {
@@ -40,15 +47,15 @@ const Home = () => {
 
     // pause music
     return () => {
-      if (audioRefValue) audioRefValue?.pause();
+      if (audioRefValue) audioRefValue.pause();
     };
   }, [isPlayingMusic]);
 
   // Function to adjust island parameters based on screen size
-  const adjustIslandForScreenSize = () => {
-    let screenScale = null; // Island scale based on screen size
-    let screenPosition = [0, -6.5, -43]; // Initial island position
-    let rotation = [0.1, 4.7, 0]; // Initial island rotation
+  const adjustIslandForScreenSize = (): [Vec3, Vec3, Vec3] => {
+    let screenScale: Vec3; // Island scale based on screen size
+    const screenPosition: Vec3 = [0, -6.5, -43]; // Initial island position
+    const rotation: Vec3 = [0.1, 4.7, 0]; // Initial island rotation
 
     // Adjust parameters for smaller screens
     if (window.innerWidth < 768) {
@@ -63,8 +70,9 @@ const Home = () => {
   };
 
   // Function to adjust plane parameters based on screen size
-  const adjustPlaneForScreenSize = () => {
-    let screenScale, screenPosition;
+  const adjustPlaneForScreenSize = (): [Vec3, Vec3] => {
+    let screenScale: Vec3;
+    let screenPosition: Vec3;
 
     // Adjust parameters for smaller screens
     if (window.innerWidth < 768) {
