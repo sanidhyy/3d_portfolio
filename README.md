@@ -57,6 +57,7 @@ Here is the folder structure of 3D Portfolio.
       |--- index.ts
       |--- Loader.tsx
       |--- Navbar.tsx
+      |--- PageTitle.tsx
     |-- constants/
       |--- index.ts
     |-- hooks/
@@ -201,7 +202,6 @@ Useful resources and libraries that are used in My Portfolio
 - [react](https://www.npmjs.com/package/react): ^19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.8
 - [react-google-recaptcha-v3](https://www.npmjs.com/package/react-google-recaptcha-v3): ^1.11.0
-- [react-helmet-async](https://www.npmjs.com/package/react-helmet-async): ^3.0.0
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.18.2
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [resend](https://www.npmjs.com/package/resend): ^6.22.0

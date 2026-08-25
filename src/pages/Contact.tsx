@@ -1,13 +1,12 @@
 import { Suspense, useLayoutEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Helmet } from "react-helmet-async";
 import {
   GoogleReCaptchaProvider,
   useGoogleReCaptcha,
 } from "react-google-recaptcha-v3";
 
 // components
-import { Loader, Alert } from "../components";
+import { Loader, Alert, PageTitle } from "../components";
 
 import { Fox } from "../models";
 import type { FoxAnimation } from "../models";
@@ -365,9 +364,7 @@ const Contact = () => {
   return (
     <>
       {/* update site title */}
-      <Helmet>
-        <title>{SITE_NAME} | Contact Me</title>
-      </Helmet>
+      <PageTitle title={`${SITE_NAME} | Contact Me`} />
 
       {siteKey ? (
         <GoogleReCaptchaProvider reCaptchaKey={siteKey}>

@@ -17,7 +17,6 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-google-recaptcha-v3": "^1.11.0",
-    "react-helmet-async": "^3.0.0",
     "react-router-dom": "^7.18.2",
     "react-vertical-timeline-component": "^4.0.0",
     "resend": "^6.22.0",
