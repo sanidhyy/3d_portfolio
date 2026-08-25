@@ -1,9 +1,8 @@
 import { Suspense, useState, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Helmet } from "react-helmet-async";
 
 // components
-import { Loader, HomeInfo } from "../components";
+import { Loader, HomeInfo, PageTitle } from "../components";
 
 // models
 import { Island, Sky, Bird, Plane } from "../models";
@@ -98,9 +97,7 @@ const Home = () => {
   return (
     <>
       {/* update site title */}
-      <Helmet>
-        <title>{SITE_NAME} | Portfolio</title>
-      </Helmet>
+      <PageTitle title={`${SITE_NAME} | Portfolio`} />
 
       {/* home section */}
       <section className="w-full h-screen relative">

@@ -2,10 +2,9 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { Helmet } from "react-helmet-async";
 
 // components
-import { Cta } from "../components";
+import { Cta, PageTitle } from "../components";
 
 // constants
 import { SKILLS, EXPERIENCES, SITE_NAME } from "../constants";
@@ -17,9 +16,7 @@ const About = () => {
   return (
     <>
       {/* update site title */}
-      <Helmet>
-        <title>{SITE_NAME} | About me</title>
-      </Helmet>
+      <PageTitle title={`${SITE_NAME} | About me`} />
 
       {/* about section */}
       <section className="max-container">

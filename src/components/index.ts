@@ -6,6 +6,7 @@ import Cta from "./Cta";
 import HomeInfo from "./HomeInfo";
 import Loader from "./Loader";
 import Navbar from "./Navbar";
+import PageTitle from "./PageTitle";
 
 // export components
-export { Alert, Cta, HomeInfo, Loader, Navbar };
+export { Alert, Cta, HomeInfo, Loader, Navbar, PageTitle };

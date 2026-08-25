@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 
 // constants
-import { Cta } from "../components";
+import { Cta, PageTitle } from "../components";
 
 // constants
 import { PROJECTS, SITE_NAME } from "../constants";
@@ -15,9 +14,7 @@ const Projects = () => {
   return (
     <>
       {/* update site title */}
-      <Helmet>
-        <title>{SITE_NAME} | Projects</title>
-      </Helmet>
+      <PageTitle title={`${SITE_NAME} | Projects`} />
 
       {/* projects section */}
       <section className="max-container">
@@ -44,10 +41,7 @@ const Projects = () => {
         <div className="flex flex-wrap my-20 gap-16">
           {/* map over projects */}
           {PROJECTS.map((project) => (
-            <div
-              key={`Project_${project.name}`}
-              className="lg:w-[400px] w-full"
-            >
+            <div key={`Project_${project.name}`} className="lg:w-100 w-full">
               {/* project */}
               <div className="block-container w-12 h-12">
                 {/* project icon bg */}
