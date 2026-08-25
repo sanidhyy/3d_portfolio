@@ -44,10 +44,9 @@ Here is the folder structure of 3D Portfolio.
 <!--- FOLDER_STRUCTURE_START --->
 ```bash
 3d_portfolio/
-  |- dev-dist/
-    |-- registerSW.js
-    |-- sw.js
-    |-- workbox-16108a29.js
+  |- netlify/
+    |-- functions/
+      |--- contact.ts
   |- public/
   |- src/
     |-- assets/
@@ -62,6 +61,8 @@ Here is the folder structure of 3D Portfolio.
       |--- index.ts
     |-- hooks/
       |--- useAlert.ts
+    |-- lib/
+      |--- contact.ts
     |-- models/
       |--- Bird.tsx
       |--- Fox.tsx
@@ -101,40 +102,47 @@ Here is the folder structure of 3D Portfolio.
 
 1. Make sure **Git** and **NodeJS** is installed.
 2. Clone this repository to your local computer.
-3. Create `.env.local` file in root folder.
-4. Contents of `.env.local`:
+3. Create `.env` file in **root** directory.
+4. Contents of `.env`:
 
-```bash
-# .env.local file
-VITE_APP_EMAILJS_SERVICE_ID=service_xxxxxxxxxxxxx
-VITE_APP_EMAILJS_TEMPLATE_ID=template_xxxxxxxxxxxx
-VITE_APP_EMAILJS_PUBLIC_KEY=XXXXXXXXXXXXXXXXXXXXX
-VITE_APP_EMAILJS_TO_EMAIL=<your-email-here>
+```env
+# resend
+RESEND_API_KEY="re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+RESEND_FROM_EMAIL="Your Name <me@example.com>"
+CONTACT_TO_EMAIL="contact@example.com"
+CONTACT_SITE_URL="https://example.com"
+RESEND_TEMPLATE_CONTACT_USER="contact-thank-you"
+RESEND_TEMPLATE_CONTACT_ADMIN="contact-admin"
+
+# google recaptcha v3
+VITE_RECAPTCHA_SITE_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+RECAPTCHA_SECRET_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+RECAPTCHA_MIN_SCORE="0.5"
 ```
 
-5. Open terminal in root directory. Run `npm install` or `yarn install`.
+5. Create an account at [Resend](https://resend.com "Resend") and [add + verify a sending domain](https://resend.com/domains "Resend domains").
 
-6. Create new account in [EmailJS](emailjs.com "EmailJS")
+6. Create an API key at [Resend API Keys](https://resend.com/api-keys "Resend API keys") with **Sending access**. Copy it to `RESEND_API_KEY`.
 
-7. From dashboard Choose Email Services > Add New Service and connect your mail to emailjs.
+7. Set `RESEND_FROM_EMAIL` to an address on that verified domain. Set `CONTACT_TO_EMAIL` to the inbox that should receive new contact notifications. Set `CONTACT_SITE_URL` to your site's public URL (no trailing slash).
 
-**NOTE:** Make Sure you type same email in `VITE_APP_EMAILJS_TO_EMAIL` in `.env.local`
+8. In [Resend Templates](https://resend.com/templates "Resend templates"), create **two** templates and **Publish** each.
 
-8. Once, New service is configured, copy your **service id** to `VITE_APP_EMAILJS_SERVICE_ID`
+   **Template 1 — thank you to the user**
+   - Name: `contact-thank-you`
+   - Variables: `USER_NAME`, `USER_MESSAGE`, `SITE_URL`
 
-9. Now, go to Email Templates > Create New Template to create your mail template. Once it is done, you can copy **Template ID** to `VITE_APP_EMAILJS_TEMPLATE_ID`
+   **Template 2 — new message to admin**
+   - Name: `contact-admin`
+   - Variables: `USER_NAME`, `USER_EMAIL`, `USER_MESSAGE`, `SITE_URL`
 
-10. To get your **Public Key**, click on your username on navbar and go to account settings > Copy Public Key to `VITE_APP_EMAILJS_PUBLIC_KEY`
+   Copy each template's alias into `RESEND_TEMPLATE_CONTACT_USER` and `RESEND_TEMPLATE_CONTACT_ADMIN`.
 
-![Copy public key](/.github/images/step_emailjs.png "Copy public key")
+9. Create a [Google reCAPTCHA v3](https://www.google.com/recaptcha/admin/create "Google reCAPTCHA") project. Choose **Score based (v3)**, add your production domain(s) **and** `localhost`, then copy the **Site key** to `VITE_RECAPTCHA_SITE_KEY` and the **Secret key** to `RECAPTCHA_SECRET_KEY`.
 
-11. Now app is fully configured :+1: and you can start using this app using `npm run dev` or `yarn run dev`. The app is created using vite.
+10. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `pnpm install --legacy-peer-deps`.
 
-### :books: Additional Resources
-
-- ThreeJS Documentation: https://threejs.org/docs/
-- EmailJS Documentation: https://www.emailjs.com/docs/
-- Vite Documentation: https://vitejs.dev/guide/
+11. Now the app is fully configured 👍 and you can start it with `npm run dev` or `pnpm dev`.
 
 **NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
 
@@ -173,12 +181,14 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
-- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
+- [@netlify/functions](https://www.npmjs.com/package/@netlify/functions): ^6.0.0
+- [@netlify/vite-plugin](https://www.npmjs.com/package/@netlify/vite-plugin): ^2.12.9
 - [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): ^10.1.2
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.8
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.7.0
 - [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite): ^4.3.3
+- [@types/node](https://www.npmjs.com/package/@types/node): ^26.2.0
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.18
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.5
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
@@ -190,9 +200,11 @@ Useful resources and libraries that are used in My Portfolio
 - [globals](https://www.npmjs.com/package/globals): ^17.11.0
 - [react](https://www.npmjs.com/package/react): ^19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.8
+- [react-google-recaptcha-v3](https://www.npmjs.com/package/react-google-recaptcha-v3): ^1.11.0
 - [react-helmet-async](https://www.npmjs.com/package/react-helmet-async): ^3.0.0
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.18.2
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
+- [resend](https://www.npmjs.com/package/resend): ^6.22.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
 - [three](https://www.npmjs.com/package/three): ^0.185.1
 - [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
