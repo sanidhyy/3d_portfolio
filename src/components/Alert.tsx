@@ -1,5 +1,13 @@
+import type { AlertType } from "../hooks/useAlert";
+
+type AlertProps = {
+  type: AlertType;
+  text: string;
+  show?: boolean;
+};
+
 // alert
-const Alert = ({ type, text }) => {
+const Alert = ({ type, text }: AlertProps) => {
   return (
     <div className="absolute top-10 left-0 right-0 flex justify-center items-center">
       <div
