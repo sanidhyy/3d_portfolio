@@ -2,6 +2,7 @@ import { useRef, useEffect, useMemo } from "react";
 import { useAnimations, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { clone } from "three/addons/utils/SkeletonUtils.js";
+import type { Mesh } from "three";
 
 // Import the 3D model file for the bird
 import birdScene from "../assets/3d/bird.glb";
@@ -9,7 +10,7 @@ import birdScene from "../assets/3d/bird.glb";
 // Bird component definition
 const Bird = () => {
   // Create a reference for the bird mesh
-  const birdRef = useRef();
+  const birdRef = useRef<Mesh>(null);
 
   // Load the 3D model and animations using useGLTF and useAnimations hooks
   const { scene, animations } = useGLTF(birdScene);

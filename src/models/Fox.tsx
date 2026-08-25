@@ -10,31 +10,55 @@
 import { useEffect, useMemo, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { useGraph } from "@react-three/fiber";
+import type { ThreeElements } from "@react-three/fiber";
 import { clone } from "three/addons/utils/SkeletonUtils.js";
+import type { Bone, Group, MeshStandardMaterial, SkinnedMesh } from "three";
+import type { GLTF } from "three/addons/loaders/GLTFLoader.js";
 
 // Import the 3D model file for the fox
 import foxScene from "../assets/3d/fox.glb";
 
+export type FoxAnimation = "idle" | "walk" | "hit";
+
+type FoxProps = ThreeElements["group"] & {
+  currentAnimation: FoxAnimation;
+};
+
+type GLTFResult = GLTF & {
+  nodes: {
+    GLTF_created_0_rootJoint: Bone;
+    Object_7: SkinnedMesh;
+    Object_8: SkinnedMesh;
+    Object_9: SkinnedMesh;
+    Object_10: SkinnedMesh;
+    Object_11: SkinnedMesh;
+  };
+  materials: {
+    PaletteMaterial001: MeshStandardMaterial;
+  };
+};
+
 // Fox component definition
-const Fox = ({ currentAnimation, ...props }) => {
+const Fox = ({ currentAnimation, ...props }: FoxProps) => {
   // Create a reference for the group that contains the fox model
-  const group = useRef();
+  const group = useRef<Group>(null);
 
   // Load the 3D model and animations using useGLTF and useAnimations hooks
   const { scene, animations } = useGLTF(foxScene);
   const clonedScene = useMemo(() => clone(scene), [scene]);
-  const { nodes, materials } = useGraph(clonedScene);
+  const { nodes, materials } = useGraph(clonedScene) as unknown as Pick<
+    GLTFResult,
+    "nodes" | "materials"
+  >;
   const { actions } = useAnimations(animations, group);
 
   // Use useEffect to play the specified animation when it changes
   useEffect(() => {
     // Stop all existing animations
-    Object.values(actions).forEach((action) => action.stop());
+    Object.values(actions).forEach((action) => action?.stop());
 
     // Play the selected animation if it exists
-    if (actions[currentAnimation]) {
-      actions[currentAnimation].play();
-    }
+    actions[currentAnimation]?.play();
   }, [actions, currentAnimation]);
 
   // Return the JSX for the Fox component with group, mesh, and skeleton
