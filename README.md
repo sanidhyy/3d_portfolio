@@ -44,9 +44,12 @@ Here is the folder structure of 3D Portfolio.
 <!--- FOLDER_STRUCTURE_START --->
 ```bash
 3d_portfolio/
+  |- dev-dist/
+    |-- registerSW.js
+    |-- sw.js
+    |-- workbox-16108a29.js
   |- netlify/
     |-- functions/
-      |--- contact.ts
   |- public/
   |- src/
     |-- assets/
