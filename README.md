@@ -87,8 +87,6 @@ Here is the folder structure of 3D Portfolio.
   |- package.json
   |- pnpm-lock.yaml
   |- pnpm-workspace.yaml
-  |- postcss.config.js
-  |- tailwind.config.js
   |- vite.config.js
 ```
 <!--- FOLDER_STRUCTURE_END --->
@@ -175,22 +173,21 @@ Useful resources and libraries that are used in My Portfolio
 - [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): ^10.1.2
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.8
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.7.0
+- [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite): ^4.3.3
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.18
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.5
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.1.0
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.5.4
 - [eslint](https://www.npmjs.com/package/eslint): ^10.9.0
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react): ^7.32.2
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): ^7.1.1
 - [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh): ^0.5.4
-- [postcss](https://www.npmjs.com/package/postcss): ^8.5.26
 - [react](https://www.npmjs.com/package/react): ^19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.8
 - [react-helmet-async](https://www.npmjs.com/package/react-helmet-async): ^3.0.0
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.18.2
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.5
-- [three](https://www.npmjs.com/package/three): ^0.184.0
+- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
+- [three](https://www.npmjs.com/package/three): ^0.185.1
 - [vite](https://www.npmjs.com/package/vite): ^8.2.2
 - [vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa): ^1.3.0
 - [workbox-window](https://www.npmjs.com/package/workbox-window): ^7.0.0
