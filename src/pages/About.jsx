@@ -26,7 +26,7 @@ const About = () => {
         {/* about head */}
         <h1 className="head-text">
           Hello, I&apos;m{" "}
-          <span className="blue-gradient_text font-semibold drop-shadow">
+          <span className="blue-gradient_text font-semibold drop-shadow-sm">
             {SITE_NAME.split(" ")[0]}
           </span>
         </h1>

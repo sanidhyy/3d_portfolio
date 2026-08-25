@@ -24,7 +24,7 @@ const Projects = () => {
         {/* projects head */}
         <h1 className="head-text">
           My{" "}
-          <span className="blue-gradient_text font-semibold drop-shadow">
+          <span className="blue-gradient_text font-semibold drop-shadow-sm">
             Projects
           </span>
         </h1>
