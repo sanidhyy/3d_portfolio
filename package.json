@@ -11,20 +11,24 @@
     "typecheck": "tsc -b --noEmit"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "@react-spring/three": "^10.1.2",
     "@react-three/drei": "^10.7.8",
     "@react-three/fiber": "^9.7.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-google-recaptcha-v3": "^1.11.0",
     "react-helmet-async": "^3.0.0",
     "react-router-dom": "^7.18.2",
     "react-vertical-timeline-component": "^4.0.0",
+    "resend": "^6.22.0",
     "three": "^0.185.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@netlify/functions": "^6.0.0",
+    "@netlify/vite-plugin": "^2.12.9",
     "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.2.0",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
     "@types/react-vertical-timeline-component": "^3.3.6",
@@ -63,7 +67,9 @@
     "tailwindcss",
     "javascript",
     "js",
-    "typescript"
+    "typescript",
+    "resend",
+    "netlify"
   ],
   "license": "MIT",
   "repository": {

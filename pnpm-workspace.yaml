@@ -1,2 +1,4 @@
 allowBuilds:
+  esbuild: false
   react-vertical-timeline-component: false
+  sharp: false
