@@ -349,6 +349,9 @@ const ContactForm = () => {
           >
             {isLoading ? "Sending..." : "Send Message"}
           </button>
+          <p className="mt-3 text-xs text-black-500/60">
+            This site is protected by reCAPTCHA.
+          </p>
         </form>
       </div>
 
