@@ -6,11 +6,11 @@ import { github } from "../assets/icons";
 // navbar
 const Navbar = () => {
   return (
-    <header className="header">
+    <header className="header gap-5">
       {/* brand logo */}
       <NavLink
         to="/"
-        className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
+        className="size-10 min-w-10 shrink-0 aspect-square rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
         title={SITE_NAME}
       >
         <p className="blue-gradient_text">
