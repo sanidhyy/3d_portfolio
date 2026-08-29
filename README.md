@@ -200,7 +200,7 @@ Useful resources and libraries that are used in My Portfolio
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.1.0
 - [eslint](https://www.npmjs.com/package/eslint): ^10.9.0
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): ^7.1.1
-- [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh): ^0.5.4
+- [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh): ^0.5.5
 - [globals](https://www.npmjs.com/package/globals): ^17.11.0
 - [react](https://www.npmjs.com/package/react): ^19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.8
