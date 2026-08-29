@@ -19,7 +19,7 @@
     "react-google-recaptcha-v3": "^1.11.0",
     "react-router-dom": "^7.18.2",
     "react-vertical-timeline-component": "^4.0.0",
-    "resend": "^6.22.0",
+    "resend": "^6.24.0",
     "three": "^0.185.1"
   },
   "devDependencies": {
