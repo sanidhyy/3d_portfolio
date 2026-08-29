@@ -187,7 +187,7 @@ Useful resources and libraries that are used in My Portfolio
 <!--- DEPENDENCIES_START --->
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
 - [@netlify/functions](https://www.npmjs.com/package/@netlify/functions): ^6.0.0
-- [@netlify/vite-plugin](https://www.npmjs.com/package/@netlify/vite-plugin): ^2.12.9
+- [@netlify/vite-plugin](https://www.npmjs.com/package/@netlify/vite-plugin): ^3.0.0
 - [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): ^10.1.2
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.8
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.7.0
