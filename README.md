@@ -207,7 +207,7 @@ Useful resources and libraries that are used in My Portfolio
 - [react-google-recaptcha-v3](https://www.npmjs.com/package/react-google-recaptcha-v3): ^1.11.0
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.18.2
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
-- [resend](https://www.npmjs.com/package/resend): ^6.24.0
+- [resend](https://www.npmjs.com/package/resend): ^6.25.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
 - [three](https://www.npmjs.com/package/three): ^0.185.1
 - [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
