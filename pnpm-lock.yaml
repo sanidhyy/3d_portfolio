@@ -33,8 +33,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       resend:
-        specifier: ^6.24.0
-        version: 6.24.0
+        specifier: ^6.25.0
+        version: 6.25.0
       three:
         specifier: ^0.185.1
         version: 0.185.1
@@ -3964,8 +3964,8 @@ packages:
   require-package-name@2.0.1:
     resolution: {integrity: sha512-uuoJ1hU/k6M0779t3VMVIYpb2VMJk05cehCaABFhXaibcbvfgR8wKiozLjVFSzJPmQMRqIcO0HMyTFqfV09V6Q==}
 
-  resend@6.24.0:
-    resolution: {integrity: sha512-ZG+tRzTtg3usrzMMVK1THPILCDbxE0uefG3XEQro/+jb9hcRb8JiQeyzIo2BphMJk2OomBeciZU3rCgX3XWx5w==}
+  resend@6.25.0:
+    resolution: {integrity: sha512-iptUEycs+6Hu+W8mExK708LrDiMYOuGgnCP+wTD5L4Zrqqd2B86h1oyAmNe0khZWQw0ccI7jz8OgAaplEsyaIA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@react-email/render': '*'
@@ -8856,7 +8856,7 @@ snapshots:
 
   require-package-name@2.0.1: {}
 
-  resend@6.24.0:
+  resend@6.25.0:
     dependencies:
       postal-mime: 2.7.5
       standardwebhooks: 1.0.0
