@@ -211,7 +211,7 @@ Useful resources and libraries that are used in My Portfolio
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
 - [three](https://www.npmjs.com/package/three): ^0.186.0
 - [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
-- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint): ^8.68.0
+- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint): ^8.70.0
 - [vite](https://www.npmjs.com/package/vite): ^8.3.0
 - [vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa): ^1.3.0
 - [workbox-window](https://www.npmjs.com/package/workbox-window): ^7.0.0
