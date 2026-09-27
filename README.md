@@ -190,7 +190,7 @@ Useful resources and libraries that are used in My Portfolio
 - [@netlify/vite-plugin](https://www.npmjs.com/package/@netlify/vite-plugin): ^3.0.1
 - [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): ^10.1.2
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.8
-- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.7.0
+- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.8.0
 - [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite): ^4.3.3
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26.5.0
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.18
