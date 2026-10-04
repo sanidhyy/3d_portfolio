@@ -209,7 +209,7 @@ Useful resources and libraries that are used in My Portfolio
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [resend](https://www.npmjs.com/package/resend): ^6.28.1
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
-- [three](https://www.npmjs.com/package/three): ^0.186.0
+- [three](https://www.npmjs.com/package/three): ^0.186.1
 - [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
 - [typescript-eslint](https://www.npmjs.com/package/typescript-eslint): ^8.70.1
 - [vite](https://www.npmjs.com/package/vite): ^8.3.1
