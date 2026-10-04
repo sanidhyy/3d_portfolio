@@ -193,8 +193,8 @@ Useful resources and libraries that are used in My Portfolio
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.8.0
 - [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite): ^4.3.3
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26.6.3
-- [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.18
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.5
+- [@types/react](https://www.npmjs.com/package/@types/react): ^19.3.0
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.3.0
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@types/three](https://www.npmjs.com/package/@types/three): ^0.186.0
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.1.1
@@ -202,8 +202,8 @@ Useful resources and libraries that are used in My Portfolio
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): ^7.1.1
 - [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh): ^0.5.7
 - [globals](https://www.npmjs.com/package/globals): ^17.12.0
-- [react](https://www.npmjs.com/package/react): ^19.2.8
-- [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.8
+- [react](https://www.npmjs.com/package/react): ^19.3.0
+- [react-dom](https://www.npmjs.com/package/react-dom): ^19.3.0
 - [react-google-recaptcha-v3](https://www.npmjs.com/package/react-google-recaptcha-v3): ^1.11.0
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.18.4
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
