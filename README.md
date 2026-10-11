@@ -197,7 +197,7 @@ Useful resources and libraries that are used in My Portfolio
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.3.0
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@types/three](https://www.npmjs.com/package/@types/three): ^0.186.0
-- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.1.1
+- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.1.2
 - [eslint](https://www.npmjs.com/package/eslint): ^10.11.0
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): ^7.1.1
 - [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh): ^0.5.7
