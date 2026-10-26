@@ -212,7 +212,7 @@ Useful resources and libraries that are used in My Portfolio
 - [three](https://www.npmjs.com/package/three): ^0.186.1
 - [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
 - [typescript-eslint](https://www.npmjs.com/package/typescript-eslint): ^8.71.1
-- [vite](https://www.npmjs.com/package/vite): ^8.3.4
+- [vite](https://www.npmjs.com/package/vite): ^8.3.5
 - [vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa): ^2.0.0
 - [workbox-window](https://www.npmjs.com/package/workbox-window): ^7.0.0
 
