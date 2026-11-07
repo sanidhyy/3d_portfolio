@@ -43,8 +43,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))
       '@netlify/functions':
-        specifier: ^6.0.3
-        version: 6.0.3
+        specifier: ^6.1.0
+        version: 6.1.0
       '@netlify/vite-plugin':
         specifier: ^3.0.1
         version: 3.0.1(rollup@4.62.4)(supports-color@7.2.0)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.50.0)(yaml@2.9.0))
@@ -1095,6 +1095,10 @@ packages:
     resolution: {integrity: sha512-tRWkLmO6pyqZetFkhYgtX6LH1umqaJAZN5mRNOJubca/+Mqm0VTUyl51FeS0UbVfetLwiwgpzbGmABpc5gGHyg==}
     engines: {node: '>=22.12.0'}
 
+  '@netlify/cache@4.2.0':
+    resolution: {integrity: sha512-xT8DGkqwnw3C1TzBmgvJl8NyEugGNKoj6o5aKoSPxKXLGI2Hfm6JodsSHwl9r5drotMMY+x1rH5GjprLngKvIA==}
+    engines: {node: '>=22.12.0'}
+
   '@netlify/config@25.2.3':
     resolution: {integrity: sha512-1X4HFfC6y1gg1jg20FCt6HGkH4ifVfGrsNwe6tB3n3/t7QGM7Qje49EAhgn+EJHF0EoAF/xOiO4RG8CyWHhRyg==}
     engines: {node: '>=22.12.0'}
@@ -1135,8 +1139,8 @@ packages:
     resolution: {integrity: sha512-Pee+FoFnAtdejTkl62a7mZxj6Wx4eqVNuYyDc5T4XPJN9GaAWaUf4cZQFlf2m4Fqq0HoghjtcPKo+BZviVPPKA==}
     engines: {node: '>=22.12.0'}
 
-  '@netlify/functions@6.0.3':
-    resolution: {integrity: sha512-6KHpsR2L4VQL2gMm3VvG46xBNTga/SbOziluInR0++gkvOuQ/T2pxsxf2Rys5wOikpNY3Zv1IoE52/pWBJjZ9Q==}
+  '@netlify/functions@6.1.0':
+    resolution: {integrity: sha512-Kwbood+CBR0okDmimwQ7YhsLU5jV0ON/8f6SvaTklVqDMOMfaHhaSsl6ELgnpWwlKgnkDYUf1Sg2BIJnrenRrA==}
     engines: {node: '>=22.12.0'}
 
   '@netlify/headers-parser@10.1.1':
@@ -5862,6 +5866,10 @@ snapshots:
     dependencies:
       '@netlify/runtime-utils': 3.0.0
 
+  '@netlify/cache@4.2.0':
+    dependencies:
+      '@netlify/runtime-utils': 3.0.0
+
   '@netlify/config@25.2.3':
     dependencies:
       '@netlify/api': 15.1.2
@@ -6013,8 +6021,9 @@ snapshots:
     dependencies:
       '@netlify/types': 3.0.0
 
-  '@netlify/functions@6.0.3':
+  '@netlify/functions@6.1.0':
     dependencies:
+      '@netlify/cache': 4.2.0
       '@netlify/types': 3.3.0
 
   '@netlify/headers-parser@10.1.1':
