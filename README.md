@@ -196,7 +196,7 @@ Useful resources and libraries that are used in My Portfolio
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
-- [@types/three](https://www.npmjs.com/package/@types/three): ^0.186.0
+- [@types/three](https://www.npmjs.com/package/@types/three): ^0.187.0
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.1.2
 - [eslint](https://www.npmjs.com/package/eslint): ^10.13.0
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): ^7.1.1
@@ -209,7 +209,7 @@ Useful resources and libraries that are used in My Portfolio
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [resend](https://www.npmjs.com/package/resend): ^6.35.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
-- [three](https://www.npmjs.com/package/three): ^0.186.1
+- [three](https://www.npmjs.com/package/three): ^0.187.0
 - [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
 - [typescript-eslint](https://www.npmjs.com/package/typescript-eslint): ^8.72.1
 - [vite](https://www.npmjs.com/package/vite): ^8.3.5
