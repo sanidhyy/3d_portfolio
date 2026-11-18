@@ -186,7 +186,7 @@ Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
-- [@netlify/functions](https://www.npmjs.com/package/@netlify/functions): ^6.1.0
+- [@netlify/functions](https://www.npmjs.com/package/@netlify/functions): ^6.1.1
 - [@netlify/vite-plugin](https://www.npmjs.com/package/@netlify/vite-plugin): ^3.0.1
 - [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): ^10.1.2
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.9
@@ -207,7 +207,7 @@ Useful resources and libraries that are used in My Portfolio
 - [react-google-recaptcha-v3](https://www.npmjs.com/package/react-google-recaptcha-v3): ^1.11.0
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.18.5
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
-- [resend](https://www.npmjs.com/package/resend): ^6.35.0
+- [resend](https://www.npmjs.com/package/resend): ^6.38.1
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
 - [three](https://www.npmjs.com/package/three): ^0.187.0
 - [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
